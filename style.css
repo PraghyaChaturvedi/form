@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.MainContainer{
+    height: 400px;
+    width: 632px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgb(102, 101, 101);
+    border-radius: 8px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:100px;
+    overflow: hidden;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(102, 101, 101);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contFirst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* z-index: 2; */
+}
+
+.data{
+    height: 45px;
+    width: 300px;
+    background-color: #fafafa;
+    margin: 8px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: rgb(255, 136, 0);
+    color: white;
+    height: 45px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.hoverer:hover{
+    border: 1px solid rgb(255, 136, 0);
+}
+
+/* Making of second container */
+.contSec{
+    height: 400px;
+    width: 316px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient(0.25turn,#fd1d1d,rgb(255, 136, 0));
+    /* z-index: 5; */
+}
+.mar{
+    margin: 8px;
+}
+.btn2{
+    color: white;
+    height: 45px;
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: inherit;
+}
+
+/* Animation part */
+.ani{
+    animation: roller 1s ease-in 0s 1;
+}
+
+.ani2{
+    animation: roller2 1s ease-out 0s 1;
+}
+
+.ani3{
+    animation: three 1s ease-out 0s 1;
+}
+
+.ani4{
+    animation: four 1s ease-in 0s 1;
+}
+  
+@keyframes roller {
+    0%{transform: translateX(0);}
+    100%{
+        transform: translateX(-316px);
+    }
+}  
+
+@keyframes roller2 {
+    0%{transform: translateX(0);}
+    100%{
+        transform: translateX(316px);
+    }
+}
+
+@keyframes three {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(316px);}
+}
+
+@keyframes four {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-316px);}
+}
+
+.hide {
+    display: none;
+}
+
+/* For second panel */
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.hider{
+    display: none;
+}
+
+.pause1{
+    animation-play-state: paused;
+}
+
+.pause2{
+    animation-play-state: paused;
+}
+
+
+/* .animaton{
+    animation: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+   
+
+}
+@keyframes animate {
+    0%{
+        transform:
+    }
+
+    100%{
+        transform: ;
+    }
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: pink;
+} */
